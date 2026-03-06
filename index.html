@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website for [Your Name]">
+    <title>Portfolio - Philemon Nkandu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--
+    ============================================================
+    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
+    CSC4035 Web Programming and Technologies
+
+    Instructions:
+    1. Complete all TODO sections below
+    2. Use semantic HTML5 elements
+    3. Ensure all images have alt attributes
+    4. Ensure all form inputs have labels
+    5. Test responsiveness at multiple breakpoints
+    ============================================================
+    -->
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="#home">Philemon Nkandu</a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <span class="hero__greeting">Hello, I'm</span>
+                <h1>Philemon Nkandu</h1>
+                <p class="hero__tagline">
+                    Web Developer &nbsp;&bull;&nbsp; Designer &nbsp;&bull;&nbsp; Problem Solver
+                </p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                    <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero__decoration" aria-hidden="true"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about__content">
+                    <div class="about__image">
+                        <img src="phil.jpg" alt="Profile photo of phil.jpg">
+                    </div>
+                    <div class="about__text">
+                        <p>
+                             I'm a passionate software developer with a strong foundation in building clean, efficient, and user-centred web applications. My journey into software development started with a curiosity about how the websites and apps I used every day actually worked — that curiosity quickly turned into a career path I'm genuinely excited about.
+Through my studies in Computer Science, I've gained hands-on experience across the full web development stack — from crafting responsive front-end interfaces with HTML, CSS, and JavaScript, to building back-end logic and working with databases. I enjoy projects that sit at the intersection of functionality and great user experience, where good engineering and thoughtful design work together.I'm especially drawn to JavaScript and its ecosystem, and I'm actively deepening my knowledge of frameworks like React and Node.js. I believe in writing code that is not only functional but readable and maintainable — code that other developers can build on confidently.Outside of coursework, I work on personal projects that challenge me to solve real problems, and I enjoy collaborating with others, picking up new tools quickly, and contributing positively to any team I'm part of. After graduation, I aim to join a team where I can keep growing, ship meaningful products, and make a real impact through technology. 
+                        </p>
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                            <li>Git &amp; GitHub</li>
+                            <li>Accessibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects__grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <div class="project-card__content">
+                            <h3>Weather Dashboard</h3>
+                            <p>
+                                 A responsive weather web app that fetches real-time weather data and 5-day forecasts for any city worldwide using the OpenWeatherMap API. Users can search by city name, toggle between Celsius and Fahrenheit, and save favourite locations. Built with vanilla JavaScript, HTML5, and CSS3 with a mobile-first design approach. 
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <div class="project-card__content">
+                            <h3>Task Manager App</h3>
+                            <p>
+                                A full-stack productivity application that allows users to create, organise, and track daily tasks. Features include user authentication, drag-and-drop task reordering, priority labels, and deadline reminders. Built with React on the front end and Node.js with Express on the back end, using MongoDB for data persistence. 
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <div class="project-card__content">
+                            <h3>Student Grade Tracker</h3>
+                            <p>A web-based grade management system designed for students to log their course marks, calculate weighted averages, and visualise academic progress through interactive charts. Built with Python and Flask for the back end, with a SQLite database, and Chart.js on the front end to render grade trend graphs.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form class="contact__form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Philemon Nkandu</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Your Name"
+                            minlength="2"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">philemonnkandu@gmail.com</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="your.email@example.com"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is this regarding?"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                            rows="5"
+                            placeholder="Your message..."
+                            minlength="10"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Philemon Nkandu. All rights reserved.</p>
+            <nav class="footer__social">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const toggle = document.querySelector('.nav__toggle');
+        const menu = document.querySelector('.nav__menu');
+        toggle.addEventListener('click', () => {
+            const open = menu.classList.toggle('nav__menu--open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+
+        // Active link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const links = document.querySelectorAll('.nav__link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - 80) current = sec.id;
+            });
+            links.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        });
+    </script>
+</body>
+</html>
